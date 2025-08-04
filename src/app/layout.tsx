@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Script from 'next/script';
 import { Geist, Geist_Mono, Abel } from "next/font/google";
 import "./globals.css";
 import Navbar from "../../components/Navbar";
@@ -31,6 +32,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+       <head>
+            <Script src="https://cdn.lordicon.com/lordicon.js" strategy="beforeInteractive" />
+      </head>
       <body
   className={`${geistSans.variable} ${geistMono.variable} ${abel.variable} antialiased`}
 >

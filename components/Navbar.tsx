@@ -3,7 +3,7 @@
 import React, { useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
-import { Menu, X, Instagram, MessageCircleMore } from "lucide-react";
+import { Menu, X } from "lucide-react";
 
 const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -25,17 +25,50 @@ const Navbar = () => {
         {/* Desktop Menu */}
         <div className="hidden md:flex items-center space-x-6">
           <Link href="/about" className="hover:underline transition">About</Link>
-          <Link href="/work" className="hover:underline transition">Work</Link>
+          <Link href="/works" className="hover:underline transition">Works</Link>
           <Link href="/contact" className="hover:underline transition">Contact</Link>
 
           <a href="https://www.tiktok.com/@sheymis_art_?_t=ZS-8ya6PNkj4Cn&_r=1" target="_blank" rel="noopener noreferrer" aria-label="TikTok">
-          🎵
+            <div
+                dangerouslySetInnerHTML={{
+                  __html: `
+                   <lord-icon
+                      src="https://cdn.lordicon.com/kciljrmc.json"
+                      trigger="hover"
+                      state="hover-dots"
+                     stroke="light"
+                     style="width:25px;height:25px">
+                   </lord-icon>`,
+                }}
+              />
           </a>
           <a href="https://www.instagram.com/sheymis_art?igsh=MWdzbmc3MDIzbzM5aQ==" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
-            <Instagram size={20} />
+             <div
+                dangerouslySetInnerHTML={{
+                  __html: `
+                   <lord-icon
+                       src="https://cdn.lordicon.com/dbugezxr.json"
+                       trigger="hover"
+                       stroke="light"
+                       state="hover-rotate"
+                     style="width:25px;height:25px">
+                   </lord-icon>`,
+                }}
+              />
           </a>
           <a href="https://wa.me/2349164570736" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp">
-            <MessageCircleMore size={20} />
+             <div
+                dangerouslySetInnerHTML={{
+                  __html: `
+                   <lord-icon
+                       src="https://cdn.lordicon.com/edecmgef.json"
+                       trigger="hover"
+                       state="hover-draw"
+                     stroke="light"
+                     style="width:25px;height:25px">
+                   </lord-icon>`,
+                }}
+              />
           </a>
         </div>
 
@@ -50,20 +83,53 @@ const Navbar = () => {
 
       {/* Mobile Menu Overlay */}
       {menuOpen && (
-        <div className="md:hidden mt-4 px-6 flex flex-col space-y-4">
-          <Link href="/about" onClick={() => setMenuOpen(false)} className="hover:underline">About</Link>
-          <Link href="/work" onClick={() => setMenuOpen(false)} className="hover:underline">Work</Link>
+        <div className="md:hidden mt-4 px-6 flex flex-col space-y-4 bg-white text-black shadow-lg h-[100vh] py-6">
+          <Link href="/about" onClick={() => setMenuOpen(false)} className="hover:underline mt-4">About</Link>
+          <Link href="/works" onClick={() => setMenuOpen(false)} className="hover:underline">Works</Link>
           <Link href="/contact" onClick={() => setMenuOpen(false)} className="hover:underline">Contact</Link>
 
-          <div className="flex space-x-4 pt-2">
+          <div className="flex space-x-4 pt-2 mt-4">
             <a href="https://www.tiktok.com/@sheymis_art_?_t=ZS-8ya6PNkj4Cn&_r=1" target="_blank" rel="noopener noreferrer">
-            🎵
+              <div
+                dangerouslySetInnerHTML={{
+                  __html: `
+                   <lord-icon
+                      src="https://cdn.lordicon.com/kciljrmc.json"
+                      trigger="hover"
+                      state="hover-dots"
+                     stroke="light"
+                     style="width:30px;height:30px">
+                   </lord-icon>`,
+                }}
+              />
             </a>
             <a href="https://www.instagram.com/sheymis_art?igsh=MWdzbmc3MDIzbzM5aQ==" target="_blank" rel="noopener noreferrer">
-              <Instagram size={20} />
+               <div
+                dangerouslySetInnerHTML={{
+                  __html: `
+                   <lord-icon
+                       src="https://cdn.lordicon.com/dbugezxr.json"
+                       trigger="hover"
+                       stroke="light"
+                       state="hover-rotate"
+                     style="width:30px;height:30px">
+                   </lord-icon>`,
+                }}
+              />
             </a>
             <a href="https://wa.me/2349164570736" target="_blank" rel="noopener noreferrer">
-              <MessageCircleMore size={20} />
+               <div
+                dangerouslySetInnerHTML={{
+                  __html: `
+                   <lord-icon
+                       src="https://cdn.lordicon.com/edecmgef.json"
+                       trigger="hover"
+                       state="hover-draw"
+                     stroke="light"
+                     style="width:30px;height:30px">
+                   </lord-icon>`,
+                }}
+              />
             </a>
           </div>
         </div>
