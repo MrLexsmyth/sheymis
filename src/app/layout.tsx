@@ -21,8 +21,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata = {
-  title: "Sheymis Art Gallery",
-  description: "A collection of artworks by Sheymis",
+  title: "Sheymis_Art Gallery",
+  description: "A collection of artworks by Sheymis_art",
   icons: {
     icon: "/images/favicon.ico", 
   },
