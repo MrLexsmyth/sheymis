@@ -24,6 +24,7 @@ const Navbar = () => {
 
         {/* Desktop Menu */}
         <div className="hidden md:flex items-center space-x-6">
+          <Link href="/" className="hover:underline transition text-red-900">Home</Link>
           <Link href="/about" className="hover:underline transition">About</Link>
           <Link href="/works" className="hover:underline transition">Works</Link>
           <Link href="/contact" className="hover:underline transition">Contact</Link>
@@ -82,9 +83,10 @@ const Navbar = () => {
       </div>
 
       {/* Mobile Menu Overlay */}
-      {menuOpen && (
+      {menuOpen  && (
         <div className="md:hidden mt-4 px-6 flex flex-col space-y-4 bg-white text-black shadow-lg h-[100vh] py-6">
-          <Link href="/about" onClick={() => setMenuOpen(false)} className="hover:underline mt-4">About</Link>
+          <Link href="/" onClick={() => setMenuOpen(false)} className="hover:underline mt-4">Home</Link>
+          <Link href="/about" onClick={() => setMenuOpen(false)} className="hover:underline">About</Link>
           <Link href="/works" onClick={() => setMenuOpen(false)} className="hover:underline">Works</Link>
           <Link href="/contact" onClick={() => setMenuOpen(false)} className="hover:underline">Contact</Link>
 

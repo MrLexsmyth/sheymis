@@ -3,7 +3,7 @@
 import { motion } from "framer-motion";
 import Image from "next/image";
 import Link from "next/link";
-import { FaInstagram, FaWhatsapp, FaTiktok } from "react-icons/fa6";
+import { FaInstagram, FaWhatsapp, FaTiktok, FaFacebook } from "react-icons/fa6";
 
 const containerVariants = {
   hidden: { opacity: 0, y: 40 },
@@ -43,18 +43,17 @@ const AboutPage = () => {
         className="text-lg md:text-xl text-gray-700 leading-relaxed font-light"
         variants={childVariants}
       >
-        Welcome to Sheymis_Art Gallery — a haven for creativity, color, and
-        imagination. We curate a space that brings together emerging and
-        established artists whose works challenge, inspire, and move us.
+        Welcome to Sheymis_Art Gallery — a sanctuary of creativity, color, and imagination, 
+        showcasing the captivating works of Sheymis. This gallery is a personal expression of
+         her artistic journey, curated for art lovers and collectors who seek meaning, beauty, and inspiration.
       </motion.p>
 
       <motion.p
         className="text-lg md:text-xl text-gray-700 leading-relaxed mt-6 font-light"
         variants={childVariants}
       >
-        At the heart of our mission is a desire to create an inclusive platform
-        where artists can showcase their unique perspectives and connect with
-        art lovers from around the world.
+       At the core of Sheymis_Art Gallery is a commitment to authenticity and storytelling through art. 
+       Every piece you encounter here is a reflection of Sheymis’s unique vision — created to inspire, evoke emotion, and spark conversation.
       </motion.p>
 
       <motion.p
@@ -118,7 +117,7 @@ const AboutPage = () => {
         {/* Artist Bio */}
         <p className="text-lg text-gray-700 leading-relaxed font-light max-w-xl">
           Hi, I’m <span className="font-semibold text-red-500 ">Oluwasemiloore Antonia</span>, a visual
-          storyteller and creative soul passionate about capturing emotion,
+          artist, art tutor and creative soul passionate about capturing emotion,
           culture, and humanity through every stroke and shade. My work is a
           reflection of my journey — inspired by people, dreams, faith, and the
           unseen details of everyday life. Thank you for letting me share a part
@@ -162,6 +161,14 @@ const AboutPage = () => {
             aria-label="Behance"
           >
             <FaWhatsapp className="hover:text-black transition" />
+          </a>
+           <a
+            href="https://wa.me/2349164570736"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Behance"
+          >
+            <FaFacebook className="hover:text-black transition" />
           </a>
         </div>
       </motion.div>

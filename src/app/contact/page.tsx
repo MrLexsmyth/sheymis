@@ -130,9 +130,9 @@ const ContactPage = () => {
 
       {/* Store Location */}
 <motion.div className="mt-6">
-  <h3 className="text-xl font-semibold mb-1">Visit the Studio</h3>
+  <h3 className="text-xl font-semibold mb-1">Visit the Gallery</h3>
   <p className="text-gray-700 font-light">
-    <span className="font-bold text-xl "> Sheymis_art Studio</span>  <br />
+    <span className="font-bold text-xl "> Sheymis_art Gallery</span>  <br />
     Opposite Tinuade Commercial 
     House, Tobi Rentals Bus-stop, <br />
     Ibadan, Oyo State, Nigeria.
