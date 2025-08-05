@@ -3,7 +3,7 @@
 import { motion } from "framer-motion";
 import Image from "next/image";
 import Link from "next/link";
-import { FaInstagram, FaXTwitter, FaBehance } from "react-icons/fa6";
+import { FaInstagram, FaWhatsapp, FaTiktok } from "react-icons/fa6";
 
 const containerVariants = {
   hidden: { opacity: 0, y: 40 },
@@ -117,7 +117,7 @@ const AboutPage = () => {
 
         {/* Artist Bio */}
         <p className="text-lg text-gray-700 leading-relaxed font-light max-w-xl">
-          Hi, I’m <span className="font-semibold ">Oluwasemiloore Antonia</span>, a visual
+          Hi, I’m <span className="font-semibold text-red-500 ">Oluwasemiloore Antonia</span>, a visual
           storyteller and creative soul passionate about capturing emotion,
           culture, and humanity through every stroke and shade. My work is a
           reflection of my journey — inspired by people, dreams, faith, and the
@@ -140,7 +140,7 @@ const AboutPage = () => {
         {/* Social Media Links */}
         <div className="flex gap-6 mt-6 text-2xl text-gray-700">
           <a
-            href="https://instagram.com/yourusername"
+            href="https://www.instagram.com/sheymis_art?igsh=MWdzbmc3MDIzbzM5aQ=="
             target="_blank"
             rel="noopener noreferrer"
             aria-label="Instagram"
@@ -148,20 +148,20 @@ const AboutPage = () => {
             <FaInstagram className="hover:text-black transition" />
           </a>
           <a
-            href="https://x.com/yourusername"
+            href="https://www.tiktok.com/@sheymis_art_?_t=ZS-8ya6PNkj4Cn&_r=1"
             target="_blank"
             rel="noopener noreferrer"
             aria-label="X (Twitter)"
           >
-            <FaXTwitter className="hover:text-black transition" />
+            <FaTiktok className="hover:text-black transition" />
           </a>
           <a
-            href="https://behance.net/yourusername"
+            href="https://wa.me/2349164570736"
             target="_blank"
             rel="noopener noreferrer"
             aria-label="Behance"
           >
-            <FaBehance className="hover:text-black transition" />
+            <FaWhatsapp className="hover:text-black transition" />
           </a>
         </div>
       </motion.div>
