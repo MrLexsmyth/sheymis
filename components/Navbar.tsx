@@ -24,9 +24,10 @@ const Navbar = () => {
 
         {/* Desktop Menu */}
         <div className="hidden md:flex items-center space-x-6">
-          <Link href="/" className="hover:underline transition text-red-900">Home</Link>
+          <Link href="/academy" className="hover:underline transition text-red-900">Academy</Link>
+           <Link href="/works" className="hover:underline transition">Gallery</Link>
           <Link href="/about" className="hover:underline transition">About</Link>
-          <Link href="/works" className="hover:underline transition">Works</Link>
+         
           <Link href="/contact" className="hover:underline transition">Contact</Link>
 
           <a href="https://www.tiktok.com/@sheymis_art_?_t=ZS-8ya6PNkj4Cn&_r=1" target="_blank" rel="noopener noreferrer" aria-label="TikTok">
@@ -85,9 +86,10 @@ const Navbar = () => {
       {/* Mobile Menu Overlay */}
       {menuOpen  && (
         <div className="md:hidden mt-4 px-6 flex flex-col space-y-4 bg-white text-black shadow-lg h-[100vh] py-6">
-          <Link href="/" onClick={() => setMenuOpen(false)} className="hover:underline mt-4">Home</Link>
+          <Link href="/academy" onClick={() => setMenuOpen(false)} className="hover:underline mt-4">Academy</Link>
+           <Link href="/works" onClick={() => setMenuOpen(false)} className="hover:underline">Gallery</Link>
           <Link href="/about" onClick={() => setMenuOpen(false)} className="hover:underline">About</Link>
-          <Link href="/works" onClick={() => setMenuOpen(false)} className="hover:underline">Works</Link>
+         
           <Link href="/contact" onClick={() => setMenuOpen(false)} className="hover:underline">Contact</Link>
 
           <div className="flex space-x-4 pt-2 mt-4">
