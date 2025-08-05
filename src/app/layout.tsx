@@ -20,9 +20,12 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
-export const metadata: Metadata = {
-  title: "Sheymi Art Gallery",
-  description: "A collection of artworks by Sheymi",
+export const metadata = {
+  title: "Sheymis Art Gallery",
+  description: "A collection of artworks by Sheymis",
+  icons: {
+    icon: "/images/favicon.ico", 
+  },
 };
 
 export default function RootLayout({

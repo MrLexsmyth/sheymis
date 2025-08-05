@@ -1,4 +1,4 @@
-import MySlider from "../../components/slider";
+import MySlider from "../../components/Slide";
 
 export default function Home() {
   return (

@@ -117,5 +117,5 @@ export const artworks: Artwork[] = [
     medium: "Oil",
     description: "A vibrant explosion of nature’s palette."
   },
-  // add more artworks
+  
 ];

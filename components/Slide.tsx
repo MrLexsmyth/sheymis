@@ -49,6 +49,7 @@ const MySlider = () => {
       </Swiper>
 
       {/* Navigation arrows (only on larger screens) */}
+      
       <div className="custom-prev hidden md:flex items-center justify-center absolute top-1/2 left-16 -translate-y-1/2 z-10 text-black text-6xl cursor-pointer select-none">
         ‹
       </div>

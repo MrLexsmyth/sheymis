@@ -47,7 +47,7 @@ const Page = () => {
         <select
           value={selectedMedium}
           onChange={(e) => setSelectedMedium(e.target.value)}
-          className="border px-4 py-2"
+          className="border px-6 py-2"
         >
           <option value="">All Mediums</option>
           <option value="Oil">Oil</option>
@@ -58,7 +58,7 @@ const Page = () => {
         <select
           value={selectedYear}
           onChange={(e) => setSelectedYear(e.target.value)}
-          className="border px-4 py-2"
+          className="border px-6 py-2"
         >
           <option value="">All Years</option>
           <option value="2023">2023</option>
