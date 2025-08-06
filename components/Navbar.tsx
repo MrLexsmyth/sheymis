@@ -29,11 +29,11 @@ const Navbar = () => {
       <Link
         href={`/${item}`}
         className="relative inline-block text-black transition duration-300 hover:text-black after:content-[''] after:absolute
-         after:left-0 after:-bottom-1 after:h-[2px] after:w-0 after:bg-red-500 after:transition-all after:duration-300 hover:after:w-full"
+         after:left-0 after:-bottom-1 after:h-[2px] after:w-0 after:bg-red-500 after:transition-all after:duration-500 hover:after:w-full"
       >
         {item.charAt(0).toUpperCase() + item.slice(1)}
       </Link>
-      {index < 3 && <div className="w-px h-4 bg-gray-200" />}
+      {index < 3 && <div className="w-px h-4 bg-red-500" />}
     </React.Fragment>
   ))}
 

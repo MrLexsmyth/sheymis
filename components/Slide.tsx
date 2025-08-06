@@ -33,7 +33,7 @@ const MySlider = () => {
         loop
         className="mySwiper"
       >
-        {[1, 2, 3, 4, 5, 6, 7, 8, 9].map((num) => (
+        {[ 2, 3, 4, 5, 6, 7, 8, 9].map((num) => (
           <SwiperSlide key={num}>
             <div className="relative w-full h-screen">
               <Image
