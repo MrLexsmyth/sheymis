@@ -40,7 +40,7 @@ const MySlider = () => {
                 src={`/images/slide${num}.jpg`}
                 alt={`Slide ${num}`}
                 fill
-                className="object-cover"
+                className="fill object-cover"
                 priority
               />
             </div>
